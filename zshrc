@@ -1,14 +1,15 @@
 export ZSH=~/.oh-my-zsh
 
 # POWERLEVEL9K ZSH THEME
-POWERLEVEL9K_MODE='awesome-fontconfig'
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir_writable dir virtualenv vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status ssh root_indicator host)
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
+# POWERLEVEL9K_MODE='awesome-fontconfig'
+# POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir_writable dir virtualenv vcs)
+# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status ssh root_indicator host)
+# POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 #AWS_DEFAULT_PROFILE=
 DEFAULT_USER=ryan
-ZSH_THEME="powerlevel9k/powerlevel9k"
+#ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="xiong-chiamiov-plus"
 
 # ZSH SETTINTS
 HYPHEN_INSENSITIVE="true"
