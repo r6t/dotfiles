@@ -25,6 +25,10 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+
+export PATH="/home/ryancast/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 # source ~/.fonts/*.sh
 
 # User configuration
@@ -56,3 +60,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # alias pip="pip3"
+alias p3="python3.7"
