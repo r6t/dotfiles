@@ -26,6 +26,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+export PATH="/var/lib/snapd/snap/bin:$PATH"
 export PATH="/home/ryancast/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
