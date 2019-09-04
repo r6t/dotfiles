@@ -56,10 +56,10 @@ floating_modifier $mod
 hide_edge_borders smart
 
 # start a terminal
-bindsym $mod+Return exec /usr/bin/st
+bindsym $mod+Return exec /usr/bin/tilix
 
 # start a web browser
-bindsym $mod+Shift+Return exec /usr/bin/sensible-browser
+bindsym $mod+Shift+Return exec /usr/bin/brave-browser
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -219,7 +219,7 @@ client.urgent           #002b36 #dc322f #fdf6e3 #002b36
 # Enable popup during fullscreen
 popup_during_fullscreen smart
 
-focus_follows_mouse no
+focus_follows_mouse yes
 
 # Configure the bar
 bar {

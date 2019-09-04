@@ -3,9 +3,9 @@
 ! -- Styles - Colors
 !
 ! Uncomment one and only one of the following color definitions: 
-#include "/etc/regolith/styles/color-solarized-dark"
+!#include "/etc/regolith/styles/color-solarized-dark"
 !#include "/etc/regolith/styles/color-solarized-light"
-!#include "/etc/regolith/styles/color-gruvbox"
+#include "/etc/regolith/styles/color-gruvbox"
 !#include "/etc/regolith/styles/color-nord"
 
 ! -- Styles - Fonts
@@ -17,8 +17,8 @@
 ! -- Styles - Theme
 !
 ! Uncomment one and only one of the following theme definitions:
-#include "/etc/regolith/styles/theme-regolith"
-!#include "/etc/regolith/styles/theme-ubuntu-dark"
+!#include "/etc/regolith/styles/theme-regolith"
+#include "/etc/regolith/styles/theme-ubuntu-dark"
 !#include "/etc/regolith/styles/theme-nordic"
 
 ! -- Applications
@@ -31,4 +31,3 @@
 #include "/etc/regolith/styles/i3xrocks"
 #include "/etc/regolith/styles/rofi"
 #include "/etc/regolith/styles/gnome"
-
