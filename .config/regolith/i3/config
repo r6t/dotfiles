@@ -9,16 +9,16 @@ set $mod Mod4
 # Color values are defined in ~/.Xresources-regolith
 
 # These are the labels which define each i3 workspace.
-set_from_resource $ws1  i3-wm.workspace.01.name "1"
-set_from_resource $ws2  i3-wm.workspace.02.name "2"
-set_from_resource $ws3  i3-wm.workspace.03.name "3"
-set_from_resource $ws4  i3-wm.workspace.04.name "4"
-set_from_resource $ws5  i3-wm.workspace.05.name "5"
-set_from_resource $ws6  i3-wm.workspace.06.name "6"
+set_from_resource $ws1  i3-wm.workspace.01.name "1 "
+set_from_resource $ws2  i3-wm.workspace.02.name "2 "
+set_from_resource $ws3  i3-wm.workspace.03.name "3 "
+set_from_resource $ws4  i3-wm.workspace.04.name "4 "
+set_from_resource $ws5  i3-wm.workspace.05.name "5 "
+set_from_resource $ws6  i3-wm.workspace.06.name "6 <"
 set_from_resource $ws7  i3-wm.workspace.07.name "7"
 set_from_resource $ws8  i3-wm.workspace.08.name "8"
 set_from_resource $ws9  i3-wm.workspace.09.name "9"
-set_from_resource $ws10 i3-wm.workspace.10.name "10"
+set_from_resource $ws10 i3-wm.workspace.10.name "10 "
 set_from_resource $ws11 i3-wm.workspace.11.name "11"
 set_from_resource $ws12 i3-wm.workspace.12.name "12"
 set_from_resource $ws13 i3-wm.workspace.13.name "13"
@@ -30,17 +30,17 @@ set_from_resource $ws18 i3-wm.workspace.18.name "18"
 set_from_resource $ws19 i3-wm.workspace.19.name "19"
 
 # Assign apps to workspaces
-#assign [class="Tilix"} $ws1
-#assign [class="Brave-browser"} $ws2
-#assign [class="TelegramDesktop"} $ws3
-#assign [class="discord"} $ws3
-#assign [class="pocket-casts"} $ws4
-#assign [class="Spotify"} $ws4
-#assign [class="pocket-casts"} $ws4
-#assign [class="Steam"] $ws5
-#assign [class="Shotwell"} $ws6
-#assign [class="Gnome-control-center"} $ws10
-#assign [class="Gnome-tweaks"} $ws10
+assign [class="Tilix"] $ws1
+assign [class="Brave-browser"] $ws2
+assign [class="TelegramDesktop"] $ws3
+assign [class="discord"] $ws3
+assign [class="pocket-casts"] $ws4
+assign [class="Spotify"] $ws4
+assign [class="pocket-casts"] $ws4
+assign [class="Steam"] $ws5
+assign [class="Shotwell"] $ws6
+assign [class="Gnome-control-center"] $ws10
+assign [class="Gnome-tweaks"] $ws10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -214,7 +214,7 @@ new_window pixel 1
 new_float pixel 1
 
 # Gaps (i3-gaps)
-gaps inner 5
+gaps inner 15
 gaps outer 0
 
 # Only enable gaps on a workspace when there is at least one container
@@ -311,3 +311,6 @@ exec --no-startup-id /usr/bin/regolith-ftue.sh
 
 # Hide the mouse pointer if unused for a duration
 exec --no-startup-id /usr/bin/unclutter -b
+
+# Set the desktop background
+exec_always --no-startup-id feh --bg-scale /home/ryan/Pictures/IMG_20181215_134100.jpg
