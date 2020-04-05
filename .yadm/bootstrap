@@ -1,7 +1,8 @@
 #!/bin/bash
-sudo apt -y install zsh curl python3-pip 
+sudo apt -y install zsh curl git python3-pip
 sudo pip3 install ansible
 mkdir ~/git
 git clone https://github.com/r6t/ansible-workstation-bootstrap.git ~/git
+sudo ansible-playbook ~/git/ansible-workstation-bootstrap/bootstrap-ubuntu.yaml
 #if you're copying this, don't forget to check the scripts your scripts download and run before you let them run!
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
