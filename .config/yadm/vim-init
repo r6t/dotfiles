@@ -1,0 +1,3 @@
+#!/bin/zsh
+vim +PluginInstall +qall
+python3 /home/ryan/.vim/bundle/YouCompleteMe/install.py
