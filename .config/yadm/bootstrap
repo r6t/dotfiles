@@ -1,0 +1,10 @@
+#!/bin/bash
+sudo apt -y install zsh curl git python3-pip
+#install ohmyzsh via their script
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+cp ~/.zshrc.pre-oh-my-zsh ~/.zshrc
+source ~/.zshrc
+pip3 install ansible
+mkdir -p ~/git/workstation-bootstrap
+git clone https://github.com/r6t/workstation-bootstrap.git ~/git/workstation-bootstrap
+ansible-playbook ~/git/ansible-workstation-bootstrap/bootstrap-ubuntu.yaml

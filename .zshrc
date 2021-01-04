@@ -25,7 +25,7 @@ plugins=(
 )
 
 export PATH=/var/lib/snapd/snap/bin:$PATH
-export PATH=/home/ryan/.local/lib/python3.7/site-packages:$PATH
+export PATH=/home/ryan/.local/lib/python3.8/site-packages:$PATH
 source $ZSH/oh-my-zsh.sh
 # source ~/.fonts/*.sh
 
